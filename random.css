@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background: #111827;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    min-height: 100vh;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    max-width: 650px;
+
+    background: #1f2937;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 2px solid gold;
+
+    text-align: center;
+
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+#header h1 {
+    margin: 0;
+
+    color: gold;
+
+    font-size: 40px;
+
+    text-shadow: 0 0 10px gold;
+}
+
+#header p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+/* Balance Section */
+
+#body {
+    width: 100%;
+    max-width: 650px;
+
+    background: #1f2937;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 2px solid #10b981;
+}
+
+#currentBal {
+    color: #22c55e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#earnedBal {
+    color: #22c55e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Game Section */
+
+#body + div {
+    width: 100%;
+    max-width: 650px;
+
+    background: #1f2937;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 2px solid gold;
+}
+
+/* Inputs */
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 5px;
+
+    border: 2px solid #374151;
+
+    border-radius: 8px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: gold;
+
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+/* Buttons */
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: gold;
+
+    color: black;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* Rolling Number Display */
+
+#labelNum {
+    display: block;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: #111827;
+
+    border: 3px dashed gold;
+
+    border-radius: 12px;
+
+    color: gold;
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    text-shadow: 0 0 10px gold;
+}
+
+/* Result */
+
+#result {
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #111827;
+
+    border: 2px solid #374151;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+/* Credit */
+
+#credit {
+    text-align: center;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    #header h1 {
+        font-size: 32px;
+    }
+
+    #labelNum {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="random.css">
+</head>
+<body>
+   <div id="header">
+     <h1>Lottery</h1>
+    <p>Note: Enter a number from 1 to 20. If your number matches the rolling number,you win 40× your bet. Otherwise, you lose your bet.</p>
+   </div>
+
+   <div id="body">
+    <label for="inputBal">Enter the amount you want to add to your balance: </label>
+        <input type="number" id="inputBal" placeholder="Add Balance...."><br><br>
+
+        <button id="inputBut">Add</button>
+
+        <p>Current Balance: <span id="currentBal">$0</span></p>
+        <p>Earned Balance: <span id="earnedBal">$0</span></p>
+   </div>
+
+    <div>     
+        <label for="" id="labelNum">0</label><br><br>
+        <label for="betNumber">Enter the amount you want to bet: </label>
+        <input type="number" id="betNumber" placeholder="Enter The Amount...."><br><br>
+        <label for="inputNum">Enter your lucky number: </label>
+        <input type="number" id="inputNum" placeholder="Enter number from 1 to 20...."><br><br> 
+        <button id="rollBut">Roll</button><br><br>
+        <p>Your Number: <span id="yourNum"></span></p>
+        <p id="result">Start the game</p>
+         <button id="resBut">Reset</button><br><br>
+        <p id="credit">Created by Xattora</p>
+    </div>
+    <script src="random.js"></script>
+</body>
+</html>
