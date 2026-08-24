@@ -33,7 +33,7 @@ rollButton.onclick = function(){
     yourNumber.textContent = inputNumber; 
 
     let betNumber = Number(document.getElementById("betNumber").value);
-    let randomNumber = Math.ceil(Math.random() * 1);
+    let randomNumber = Math.ceil(Math.random() * 20);
     labelNumber.textContent = randomNumber; 
 
     let winnings = betNumber * 10;
