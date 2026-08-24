@@ -54,6 +54,7 @@ resetButton.onclick = function(){
     inputBalance = document.getElementById("inputBal").value = "";
     currentBalanceText.textContent = "$0"
     currentBalance = 0
+    earnedBalance.textContent = "$0"
     labelNumber.textContent = 0;
     document.getElementById("inputNum").value = "";
     document.getElementById("betNumber").value = "";
